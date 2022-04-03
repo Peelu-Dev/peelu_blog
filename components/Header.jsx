@@ -2,8 +2,6 @@ import React,{useEffect,useState} from 'react'
 import Link  from 'next/link'
 import { getCategories } from '../services';
 
-// const categories = [{name:'React', slug:'react'},{name:'Web Development',slug:'web-dev'}]
-
 
 
 const Header = () => {
@@ -18,9 +16,14 @@ const Header = () => {
         <div className="border-b w-full inline-block border-blue-400 py-8">
             <div className="md:float-left block">
                 <Link href='/'>
-                    <span className="cursor-pointer font-bold text-4xl text-white">
-                        Peelu Blogs
-                    </span>
+                     <span className='flex cursor-pointer items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto  mr-8'>
+            <img src={'/profile.jpg'} 
+            height="50px"
+            width="50px"
+            className='align-middle rounded-full'
+            // key={post.image}
+            /> 
+            </span>
                 </Link>
             </div>
             <div className="hidden  md:float-left md:contents">

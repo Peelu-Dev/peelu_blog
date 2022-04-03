@@ -21,7 +21,7 @@ const Header = () => {
             height="50px"
             width="50px"
             className='align-middle rounded-full'
-            // key={post.image}
+            // key={post.new}
             /> 
             </span>
                 </Link>
